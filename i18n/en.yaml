@@ -10,5 +10,13 @@
 - id: Expand
   translation: Expand
 
+#- id: bookSearchConfig
+#  translation: '{ cache: true }'
 - id: bookSearchConfig
-  translation: '{ cache: true }'
+  translation: |
+    {
+      encode: false,
+      tokenize: function(str) {
+        return str.replace(/[\x00-\x7F]/g, '').split('');
+      }
+    }

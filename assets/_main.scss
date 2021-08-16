@@ -167,7 +167,7 @@ body[dir="rtl"] .book-menu {
 .book-page {
   min-width: $body-min-width;
   flex-grow: 1;
-  padding: $padding-16;
+  padding: $padding-32;
 }
 
 .book-post {
@@ -194,7 +194,8 @@ body[dir="rtl"] .book-menu {
   border-bottom: 1px solid transparent;
 
   input {
-    width: 100%;
+    // width: 100%; old
+    width: 15rem;
     padding: $padding-8;
 
     border: 0;
